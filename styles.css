@@ -1,0 +1,476 @@
+body{
+	margin:0;
+	background-color: #021226;
+	/*background-image:url(bg0.jpg);
+	background-size: 100%;
+	background-repeat: repeat-y;*/
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-track {
+  border:1px black solid;
+  opacity:1;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: none; 
+  border-radius:5px;
+  border:solid 1px #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  border:none;
+}
+
+.Top{
+	width:100%;
+	position: fixed;
+	top:0;
+	z-index:1;
+	background: #F2F2F2;
+	margin:auto;
+	float:left;
+}
+
+.main{
+	width:100%;
+	background-color: #021226;
+	margin:auto;
+	max-width:500px;
+}
+
+.DivHeader{
+	margin-left:50px;
+	width: 100%;
+	background: #F2F2F2;
+	padding:1% 2%;
+	max-width:500px;
+}
+
+.DivLogo{
+	height:150px;
+	float:left;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ImgLogo{
+	height:100%;
+}
+
+.DivMenu{
+	padding-left:100px;
+	padding-top:50px;
+	float:left;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	display:none;
+}
+
+.AMenu{
+	margin-left:15px;
+	padding-top:20px;
+	color:black;
+	text-decoration:none;
+	transition-duration: 0.2s;
+	float:left;
+}
+
+.AMenu:hover{
+color:#F23322
+}
+
+.ButtonKupTeraz{
+	border:5px #F23322 solid;
+	border-radius:80px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:60px;
+	padding-right:60px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	color:#F23322;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	background:none;
+	margin:auto;
+}
+
+.ButtonKupTeraz:hover{
+	color:white;
+	background:#F23322;
+}
+
+.DivContentL{
+	width:100%;
+	margin-top: 200px;
+	padding:50px 20px 50px 20px;
+	float:;
+	border-radius:5%;
+	text-align:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.DivContentR{
+	width:100%;
+	margin-top: 200px;
+	padding:50px 20px 50px 20px;
+	float:;
+	border-radius:5%;
+	text-align:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.DivTytul{
+	width:480px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 78px;
+	color: rgba(255, 255, 255, 0.8);
+	float:;
+}
+
+.DivTekst{
+	width:480px;
+	margin-top:50px;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 47px;
+	color: rgba(255, 255, 255, 0.8);
+	float:;
+}
+
+.DivIkona{
+	width:480px;
+	height:480px;
+	opacity: 0.7;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position: center;
+	float:;
+}
+
+.DivKontakt{
+	width:100%;
+	margin-top: 200px;
+	padding:50px 20px 50px 20px;
+	float:;
+	border-radius:5%;
+	text-align:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+#nasa{
+	margin:10px 50px;
+}
+
+#esa{
+	margin:0 50px 0 50px;
+}
+
+#spacex{
+	margin:29px 50px;
+}
+
+.LogoPartnerzy{
+	width:250px;
+	opacity:0.7;
+	margin:auto;
+	margin-top:50px;
+}
+
+.Kontakt{
+	margin-top:50px;
+}
+
+.Bottom{
+	width:100%;
+	background: Black;
+	margin-top:100px;
+	margin-bottom:230px;
+}
+
+.DivStopka{
+	margin:auto;
+	padding:20px 30px 10px 30px;
+}
+
+.DivTekstStopka{
+	width:480px;
+	margin-top:50px;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 47px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align:left;
+}
+
+.KontaktStopka{
+	margin-top:5px;
+}
+
+.Navbar{
+	width:100%;
+	position: fixed;
+	bottom:0;
+	z-index:1;
+	background: #000000;
+	float:left;
+	max-height:300px;
+	padding:15px;
+}
+
+.NavbarButton{
+	width:24%;
+	color:white;
+	float:left;
+	font-size: 100px;
+	text-align:center;
+	margin:50px 0;
+	border-left:1px white solid;
+	border-right:1px white solid;
+	}
+
+@media(min-width: 1440px){
+.Top{
+	max-width:none;
+}
+
+.main{
+	width:1440px;
+	max-width:none;
+}
+
+.DivHeader{
+	width: 1340px;
+	padding:20px 30px;
+	max-width:none;
+	margin:auto;
+}
+
+.menu{
+	display:none;
+}
+
+.DivLogo{
+	height:175px;
+	float:left;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ImgLogo{
+	height:176px;
+}
+
+.DivMenu{
+	padding-left:100px;
+	padding-top:50px;
+	float:left;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	display:block;
+}
+
+.AMenu{
+	margin-left:15px;
+	padding-top:20px;
+	color:black;
+	text-decoration:none;
+	transition-duration: 0.2s;
+	float:left;
+}
+
+.AMenu:hover{
+color:#F23322
+}
+
+.ButtonKupTeraz{
+	border:5px #F23322 solid;
+	margin-left:15px;
+	border-radius:80px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:60px;
+	padding-right:60px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	color:#F23322;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	float:left;
+	background:none;
+}
+
+.ButtonKupTeraz:hover{
+	color:white;
+	background:#F23322;
+}
+
+.DivContentL{
+	width:1100px;
+	margin:300px 70px 0 70px;
+	padding:100px 80px 100px 80px;
+	float:left;
+	border-radius:35px;
+	text-align:left;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.DivContentR{
+	width:1100px;
+	margin:300px 70px 0 70px;
+	padding:100px 80px 100px 80px;
+	float:left;
+	border-radius:35px;
+	text-align:left;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.DivTytul{
+	width:480px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 78px;
+	color: rgba(255, 255, 255, 0.8);
+	float:none;
+}
+
+.DivTekst{
+	width:480px;
+	margin-top:50px;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 47px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align:left;
+	float:left;
+}
+
+.DivIkona{
+	width:480px;
+	height:480px;
+	opacity: 0.7;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+
+.DivContentL > .DivTytul{
+	float:right;
+}
+
+.DivContentL > .DivTekst{
+	float:right;
+}
+
+.DivContentL > .DivIkona{
+	float:left;
+	margin-right:130px;
+}
+
+.DivContentR > .DivTytul{
+	float:left;
+}
+
+.DivContentR > .DivTekst{
+	float:left;
+}
+
+.DivContentR > .DivIkona{
+	float:right;
+	margin-left:130px;
+}
+
+.DivKontakt{
+	width:1100px;
+	margin:300px 70px 0 70px;
+	padding:100px 80px 100px 80px;
+	float:left;
+	border-radius:35px;
+	text-align:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+
+.DivPartnerzy{
+	margin-top:50px;
+	text-align:center;
+}
+
+.LogoPartnerzy{
+	width:250px;
+	float:left;
+	opacity:0.7;
+}
+
+.Kontakt{
+	margin-top:50px;
+	float:left;
+}
+
+.Bottom{
+	margin-top:200px;
+	width:100%;
+	background: Black;
+	float:left;
+	margin-bottom:0;
+}
+
+.DivStopka{
+	width:1440px;
+	margin:auto;
+	padding:20px 30px 10px 30px;
+}
+
+.DivTekstStopka{
+	width:480px;
+	margin-top:50px;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 47px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align:left;
+}
+
+.KontaktStopka{
+	margin-top:5px;
+}
+
+.Navbar{
+	display:none;
+}
+}
